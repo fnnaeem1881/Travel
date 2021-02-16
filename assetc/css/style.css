@@ -4,6 +4,9 @@
 html {
   scroll-behavior: smooth!important;
 }
+header#header {
+  height: auto;
+}
 img{
   margin-bottom: -5px;
   max-width: 100%;
@@ -36,6 +39,13 @@ section{
 .section-body {
   padding: 40px 0px;
   overflow: hidden;
+}
+section#page-ttile {
+  font-size: 15px;
+  background: #137257;
+  color: #e4e4e4;
+  padding: 65px 0px;
+  font-family: monospace;
 }
 nav{
   background: #000000;
@@ -466,4 +476,511 @@ footer {
 
 .contact ul li {
   margin-top: 11px;
+}*{
+  margin: 0; padding: 0;
+}
+html {
+  scroll-behavior: smooth!important;
+}
+img{
+  margin-bottom: -5px;
+  max-width: 100%;
+}
+.container{
+  width: 80%;
+  margin: auto;
+}
+a{
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+section{
+  padding: 30px 0px;
+}
+.section-title {
+  line-height: 30px;
+  font-size: 17px;
+}
+.section-title h2 {
+  color: #6a6666;
+}
+
+.section-title span {
+  color: #878181;
+}
+.section-body {
+  padding: 40px 0px;
+  overflow: hidden;
+}
+nav{
+  background: #000000;
+  position: sticky;
+  height: 80px;
+  width: 100%;
+  z-index: 99999999999999;
+  top: 0;
+  left: 0;
+}
+span.logo img {
+  width: 13%;
+  padding: 30px;
+}
+nav ul{
+  float: right;
+ 
+}
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+nav ul li a{
+  color: white;
+  font-size: 13px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+.checkbtn{
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+@media (max-width: 952px){
+  label.logo{
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  nav ul li a{
+    font-size: 11px;
+  }
+}
+@media (max-width: 858px){
+  .checkbtn{
+    display: block;
+  }
+ nav ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #2c3e50;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+    z-index: 999999999999;
+  }
+  nav ul li{
+    display: block;
+    margin: 32px 0;
+    line-height: 30px;
+  }
+  nav ul li a{
+    font-size: 13px;
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+}
+
+
+/* ----------------------------------------- */
+video#myVideo {
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: 100%;
+}
+header {/* position: relative; *//* height: 100vh; */width: 100%;overflow: hidden;}
+
+.header-content {
+color: #fff;
+/* position: absolute; */
+/* top: 50%; */
+/* left: 15%; */
+line-height: 40px;
+}
+.header-content h1 {
+font-size: 42px;
+font-weight: 700;
+padding: 10px 0px;
+}
+
+.header-content h2 {font-size: 25px;font-weight: 500;line-height: 25px;font-family: cursive;color: #473936;}
+button.header-btn {
+padding: 11px 40px;
+font-size: 15px;
+margin-top: 30px;
+border: none;
+border-radius: 5px;
+background: #615b5b;
+}
+
+button.header-btn a {
+color: #fff5f5;
+font-weight: 700;
+}
+.video-content {
+  position: absolute;
+  top: 40%;
+  left: 15%;
+}
+.pupolar-adbentare-box {
+  width: 24%;
+  float: left;
+  background-image: url(../images/adventure_popular_1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  height: 330px;
+  margin-left: 10px;
+}
+.rating {
+  width: 100%;
+  text-align: right;
+  padding: 20px 0px;
+}
+
+.rating span {
+  background: #0054A6;
+  padding: 5px 12px;
+  color: #fff;
+  border-radius: 6px;
+  border: none;
+  margin-right: 20px;
+  font-weight: 700;
+}
+.writing-content-adventure {
+  position: absolute;
+  bottom: 0;
+  padding: 20px;
+  color: #fff;
+}
+
+.writing-content-adventure span {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.writing-content-adventure h3 {
+  font-size: 21px;
+  padding: 10px 0px 0px 0px;
+  font-family: serif;
+}
+.pupolar-adbentare-content {
+  overflow: hidden;
+  height: 100%;
+  background: #00000059;
+}
+.pupolar-adbentare-box:nth-child(2){
+  width: 24%;
+  float: left;
+  background-image: url(../images/adventure_popular_2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  height: 330px;
+  margin-left: 10px;
+}
+.pupolar-adbentare-box:nth-child(3){
+  width: 24%;
+  float: left;
+  background-image: url(../images/adventure_popular_3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  height: 330px;
+  margin-left: 10px;
+}
+.pupolar-adbentare-box:nth-child(4){
+  width: 24%;
+  float: left;
+  background-image: url(../images/adventure_popular_4.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  height: 330px;
+  margin-left: 10px;
+}
+
+.banner-img{
+  background: url(../images/banner_bg_desktop.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 400px;
+  overflow: hidden;
+}
+.banner-content {
+    margin-top: 11%;
+    color: #fff;
+    padding: 0px 70px;
+    line-height: 30px;
+}
+
+.banner-content h4 {
+    font-size: 12px;
+    padding-bottom: 20px;
+}
+
+.banner-content h1 {
+    font-size: 34px;
+    line-height: 35px;
+    font-family: cursive;
+}
+
+.banner-content h2 {
+    padding: 10px 0px;
+}
+
+button.banner-btn {
+    padding: 10px 25px;
+    border: none;
+    background: tomato;
+    margin-top: 17px;
+}
+
+button.banner-btn a {
+    color: #fff;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.banner-bg {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: #00000059;
+}
+.pupolar-adbentare-box.tour-section {
+  height: 200px;
+  background: url(../images/adventure_latest_1.jpg);
+  margin-right: 20px;
+  width: 22%!important;
+}
+.pupolar-adbentare-box.tour-section:nth-child(2) {
+  height: 200px;
+  background: url(../images/adventure_latest_2.jpg);
+}
+.pupolar-adbentare-box.tour-section:nth-child(3) {
+  height: 200px;
+  background: url(../images/adventure_latest_3.jpg);
+}
+.pupolar-adbentare-box.tour-section:nth-child(4) {
+  height: 200px;
+  background: url(../images/adventure_latest_4.jpg);
+}
+section#pupolar-adbentare {
+  background: #ddddddad;
+}
+
+section#\32 nd-banner {
+  background: #ddddddad;
+}
+.palne-title {
+  text-align: center;
+}
+
+.palne-title h1 {
+  font-size: 35px;
+  color: #6e6a6a;
+  font-family: sans-serif;
+  padding: 30px 0px 15px 0px;
+}
+
+.palne-title span {
+  font-size: 20px;
+  color: #857b7b;
+}
+.plan-box {
+  width: 30%;
+  float: left;
+  margin-right: 35px;
+}
+
+.plan-ico {
+  padding: 20px 0px;
+}
+
+.plan-box h1 {
+  color: #000000a8;
+  font-size: 27px;
+}
+
+.plan-box p {
+  padding: 13px 0px;
+  font-size: 16px;
+  color: #736464;
+}
+#fixed-banner{
+  background: url(../images/bg_call_action_adventure.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.section-right-div {
+  width: 50%;
+  float: right;
+}
+
+.fixed-box {
+  background: #000;
+  color: #fff;
+  padding: 70px;
+}
+.fixed-box h1 {
+  font-size: 34px;
+  font-family: monospace;
+  margin-bottom: 15px;
+}
+.fixed-box p {
+  line-height: 20px;
+  font-size: 15px;
+  font-family: emoji;
+  padding-bottom: 20px;
+}
+button.fixedrbtn {
+  padding: 10px 25px;
+  border: none;
+  background: #fc5b62;
+  border-radius: 5px;
+}
+
+button.fixedrbtn a {
+  color: #fff;
+  font-size: 15px;
+  font-weight: 700;
+}
+footer {
+  width: 100%;
+  background: #121921;
+  padding: 30px 0px;
+  overflow: hidden;
+}
+.widget-1 {
+  width: 45%;
+  float: left;
+  padding-right: 50px;
+}
+
+.widget-2 {
+  width: 25%;
+  float: left;
+}
+
+.widget-3 {
+  width: 25%;
+  float: left;
+}
+.footer-logo {
+  width: 40%;
+  padding: 20px 0px;
+}
+
+.widget-1 p {
+  color: #dbdbdbb3;
+  font-size: 17px;
+  font-family: monospace;
+  letter-spacing: -1px;
+}
+.socail-ico {
+  padding: 20px 0px;
+  color: #fff;
+  letter-spacing: 6px;
+}
+
+.socail-ico span {
+  padding-right: 10px;
+  float: left;
+  width: 25%;
+  margin-top: 7px;
+}
+.socail-ico ul li {
+  display: inline-block;
+}
+
+.socail-ico ul li a {
+  font-size: 26px;
+  color: #fff;
+  padding: 0px  12px;
+}
+.usefull-link {
+  color: #fff;
+  padding: 23px 0px;
+  font-family: cursive;
+}
+
+.usefull-link ul li {
+  margin-top: 20px;
+}
+
+.usefull-link ul li a {
+  color: #fff;
+}
+.contact {
+  padding: 20px 0px;
+  color: #fff;
+  font-family: cursive;
+}
+.contact ul li a {
+  color: #fff;
+}
+
+.contact ul li {
+  margin-top: 11px;
+}
+.tour-packgae-img {
+  width: 15%;
+  float: left;
+  margin-top: 25px;
+}
+
+.tour-package-body {
+  width: 75%;
+  float: left;
+  padding: 0px 25px;
+}
+.tour-packgae-img img {
+  border: solid #ffffff 7px;
+  border-radius: 50%;
+}
+section#tour-packeage {
+  background: #ddd;
+}
+.tour-package-body h2 {
+  font-family: cursive;
+  padding: 10px 0px 25px;
+  color: #544e4e;
+}
+.tour-package-body p {
+  font-family: cursive;
+  padding: 0px 0px  15px  0px;
+  color: #7f7f7f;
+}
+button.pacajge-btn {
+  padding: 8px 20px;
+  font-size: 15px;
+  color: white;
+  background: #137257;
+  border: none;
+}
+.tour-package-wrap {
+  overflow: hidden;
+  margin-bottom: 50px;
 }
